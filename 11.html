@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="idade" placeholder="Idade">
+    <button onclick="Logar()">Login</button>
+    <p id="txt">Resposta</p>
+
+    <script>
+        function Logar() {
+            let idade = parseInt(document.getElementById("idade").value);
+            let txt = document.getElementById("txt")
+
+            if (idade >= 18 && idade <= 67) {
+                txt.innerHTML = ("A pessoa pode doar sangue!!")
+            } else {
+                txt.innerHTML = ("A pessoa não pode doar sangue!!")
+            }
+        }
+
+    </script>
+</body>
+
+</html>

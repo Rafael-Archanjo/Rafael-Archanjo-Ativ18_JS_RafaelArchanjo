@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="cod" placeholder="Código">
+    <input type="number" id="quant" placeholder="Quantidade">
+    <input type="number" id="preco" placeholder="Preço">
+    <button onclick="Logar()">Login</button>
+    <p id="txt">Resultado</p>
+
+    <script>
+        function Logar() {
+            let cod = parseInt(document.getElementById("cod").value);
+            let quant = parseInt(document.getElementById("quant").value);
+            let preco = parseInt(document.getElementById("preco").value);
+            let result = quant * preco;
+            let txt = document.getElementById("txt");
+            
+            txt.innerHTML = (`O preço final é de R$ ${result}`)
+            
+        }
+
+    </script>
+</body>
+
+</html>

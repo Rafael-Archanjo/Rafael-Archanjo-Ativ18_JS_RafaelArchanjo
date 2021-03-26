@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="idade" placeholder="Idade">
+    <button onclick="Logar()">Login</button>
+    <p id="txt">Resposta</p>
+
+    <script>
+        function Logar() {
+            let idade = parseInt(document.getElementById("idade").value);
+            let txt = document.getElementById("txt")
+
+            if (idade >= 5 && idade <= 7) {
+                txt.innerHTML = ("Infantil A")
+            } else if (idade >= 8 && idade <= 10) {
+                txt.innerHTML = ("Infantil B")
+            } else if (idade >= 11 && idade <= 13) {
+                txt.innerHTML = ("Juvenil A")
+            } else if (idade >= 14 && idade <= 17) {
+                txt.innerHTML = ("Juvenil B")
+            } else if (idade >= 18 && idade <= 25) {
+                txt.innerHTML = ("Sênior")
+            } else {
+                txt.innerHTML = ("Não possui uma classificação")
+            }
+        }
+
+    </script>
+</body>
+
+</html>

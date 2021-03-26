@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="senha">
+    <button onclick="Logar()">Login</button>
+    <p id="txt">Resposta</p>
+
+    <script>
+        function Logar() {
+            let numero = parseInt(document.getElementById("senha").value);
+            let txt = document.getElementById("txt")
+
+            if (numero != 2002) {
+                txt.innerHTML = ("<b>SENHA INVALIDA!!!!!<b>")
+            } else {
+                txt.innerHTML = ("<b>Acesso Permitido!<b>")
+            }
+        }
+
+    </script>
+</body>
+
+</html>
